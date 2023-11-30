@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    background-color: #8BCC96;
+}
+.nav-link{
+    font-weight: 600;
+}
+.icon{
+    margin-left: 35px;
+}
+#icon{
+    width: 30px;
+    margin-left: 20px;
+}
+.dropdown-menu {
+    position: absolute;
+    margin-top: 200px;
+}
+
+.container .slogan p{
+    font-size: 2.2vw;
+    color: #796c6c;
+}
+.container .slogan h2 {
+    font-size: 2.5vw;
+    margin: 1vw 5vw;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.card-img{
+    width: 100%;
+    height: 63%;
+    position: relative;
+    overflow: hidden;
+}
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background:rgba(26, 25, 25, 0.8);
+}
+.cards{
+    position: relative;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 320px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 3px 3px rgba(0,0,0,.075);
+    border: 1px solid #dddfe2;
+    cursor: pointer;
+}
+.view-all{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+   
+}
+.view-all a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.card-body{
+    height: 26%;
+    padding: 5px;
+}
+
+.cards img{
+   width: 100%;
+   height: 200px;
+}
+.tel,.email,footer a{
+    color: #FFD705;
+}
+.next-page a{
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 4px 4px rgb(194, 181, 241);
+    background-color: #f0f2f6;
+    font-weight: 600;
+    width: 40px;
+}
+.next-page{
+    width: 150px;
+    height: 50px;
+    margin-bottom: 1vw;
+   
+}
+footer{
+    clear: both;
+}
+.cards:hover{
+    .shadow{
+        top: 0;
+        transition: all 0.5s ease;
+    }
+    .view-all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.next-page a:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px rgb(203, 193, 193);
+}
+
+
+
+/* news */
+.ctn-news{
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner{
+    width: 100%;
+}
+.news{
+    overflow: hidden;
+}
+
+.news:hover {
+    background-color: #8BCC96;
+}
+.travel-exp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.travel-img_exp{
+    width: 30%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.travel-img_exp img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.view-news{
+    display: none;
+    font-size: 15px;
+}
+button{
+    box-shadow: none;
+    border:none;
+}
+.date{
+    font-size: 12px;
+}
+
+
+.shadow-news-3{
+    position: absolute;
+    background: linear-gradient(to top , rgba(25, 24, 24, 0.5) 50% , rgba(18, 17, 17, 0.9) 30% ,rgba(53, 52, 52, 0.2),
+    rgba(8, 8, 8, 0.2) 30%);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.infor {
+    justify-content: center;
+    color: white;
+}
+.infor a{
+    color: black;
+}
+
+.news img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* CONTACT */
+.infor-contact{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.myhome-map{
+    width: 100%;
+}
+.contact-with-me{
+    width: 100%;
+}
+#input,#content-contect{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;       
+    box-shadow: 0 0 2px rgb(127, 127, 192);
+    padding-left: 1vw;
+}
+#content-contect{
+    height: 100px;
+}
+
+
+@media screen and (min-width: 1023px){
+    .travel-img_exp:hover{
+        .shadow-news-3{
+            background: linear-gradient(to top , rgba(25, 24, 24, 0.8) 100% , rgba(18, 17, 17, 0.9) 30% ,rgba(53, 52, 52, 0.2),
+            rgba(8, 8, 8, 0.2) 30%);
+        }
+        .infor {
+            width: 90%;
+            top: 10%;
+            left: 5%;
+        }
+        .date{
+            display: none;
+        }
+        .view-news{
+            display: block;
+        }
+    }
+    .cards{
+        width: 22% ;
+    }
+    .product{
+        flex-direction: row;
+    }    
+    .banner{
+        width: 60%;
+    }
+    .data-new{
+        width: 40%;
+        font-size: 15px;
+        
+    }
+
+
+    .travel-img_exp{
+        width: 30%;
+        
+    }
+    .shadow-news-3{
+        display: block;
+    }
+    .infor {
+        width: 90%;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+    .infor a{
+        color: white;
+    }
+    .myhome-map{
+        width: 45%;
+    }
+    .contact-with-me{
+        width: 50%;
+        margin-left: 3vw;
+    }
+    #content-contect{
+        height: 150px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .cards{
+        width: 29%;
+    }
+    .travel-img_exp{
+        width: 45%;
+    }
+    .myhome-map{
+        width: 45%;
+    }
+    .contact-with-me{
+        width: 50%;
+        margin-left: 3vw;
+    }
+    #content-contect{
+        height: 150px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width : 768px){
+    .product{
+        flex-direction: row;
+    }    
+    .cards{
+        width: 45%;
+    }
+    .data-new{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .news{
+        width: 46%;
+    }
+    .travel-img_exp{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width:480px){
+    .product{
+        flex-direction: row;
+    }    
+    .cards{
+        width: 100%;
+    }
+    .data-new{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .news{
+        width: 100%;
+    }
+    .travel-img_exp{
+        width: 100%;
+    }
+    
+}
+
+
